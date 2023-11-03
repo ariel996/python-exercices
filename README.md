@@ -4,6 +4,7 @@
 **PLAN :**
 - [Série N°1](#serie-n1) 
 - [Série N°2](#serie-n2) 
+- [Série N°3](#serie-n3) 
 
 
 
@@ -155,3 +156,35 @@ L3= [35,88]
 ### Exercice 11
 Ecrire un programme qui fait une transformation miroir d’une liste  
 Exemple la liste **L= [8, 24, 48, 2, 16]** le résultat attendu est : **[16, 2, 48, 24, 8]**
+
+___
+<a id="serie-n3"></a>
+
+## Série N°3
+
+### Exercice 1
+
+Ecrire une fonction somme qui prend en paramètres 2 **entiers m et n** et qui retourne la **somme** des entiers de m à n *(on supposera que m < n)*.  
+Par exemple, somme(5,8) donne 26 (= 5 + 6 + 7 + 8).
+
+
+### Exercice 2
+
+#### Équation du second degré :
+
+1. On se propose de travailler à nouveau sur les équations du second degré en utilisant cette fois- ci des fonctions.  
+Réaliser les fonctions suivantes (en utilisant les noms imposés):
+- Calcul du discriminant : *delta()*
+- Calcule du nombre de solutions :*NombreRacine()*
+- Affiche le nombre de solutions :*AfficheNombreRacine()*
+- Calcule les racines de l’équation : *Racine1()*, *Racine2()*
+
+2. Ecrire une fonction *conversion_temps(h, m, s)* qui prend en paramètre un horaire écrit sous forme **(heures ,minutes, secondes)** et retourne cet horaire converti en secondes.
+
+3. En utilisant cette fonction saisir deux horaires (heures, minutes, secondes) et calculer le temps écoulé entre les deux (en secondes).
+
+4. Ecrire une fonction *conversion_distance(km, m, cm)* qui prend en paramètre une distance écrite sous forme **(Km ,m, cm)** et retourne cette distance en mètres.
+
+5. Ecrire une fonction vitesse qui prend en paramètre une distance sous forme (Km ,m, cm) et un temps sous forme (heures ,minutes, secondes) et qui retourne la vitesse en **m/s**.  
+
+***N.B:** On utilisera les fonctions **conversion_temps(h, m, s)** et conversion_distance(km, m, cm)*
