@@ -5,6 +5,7 @@
 - [Série N°1](#serie-n1) 
 - [Série N°2](#serie-n2) 
 - [Série N°3](#serie-n3) 
+- [Série N°4](#serie-n4) 
 
 
 
@@ -188,3 +189,80 @@ Réaliser les fonctions suivantes (en utilisant les noms imposés):
 5. Ecrire une fonction vitesse qui prend en paramètre une distance sous forme (Km ,m, cm) et un temps sous forme (heures ,minutes, secondes) et qui retourne la vitesse en **m/s**.  
 
 ***N.B:** On utilisera les fonctions **conversion_temps(h, m, s)** et conversion_distance(km, m, cm)*
+
+___
+<a id="serie-n4"></a> 
+
+## Série N°4
+
+### Exercice 1
+
+Ecrivez une classe *Point* avec les attributs suivants :  
+**x** : L'abscisse du point;  
+**y** : L'ordonnée du point.  
+
+La classe *Point* doit contenir les accesseurs (get) et mutateurs (set) et aussi une méthode **\_\_str\_\_()** donnant une représentation du point.  
+
+Ecrivez une classe *Rectangle* héritant de Point avec les attributs suivants :  
+*longueur* : La longueur du rectangle;
+*largeur* : La largeur du rectangle.
+La classe *Rectangle* doit contenir des accesseurs (get) et mutateurs (set) et aussi les méthodes suivantes :  
+**aire()**: Donne l'aire du rectangle;  
+**\_\_str\_\_()**: Donne une représentation du rectangle (surcharge).  
+
+Ecrivez une classe *Parallelepipede* héritant de Rectangle avec les attributs suivants :  
+**hauteur** : La hauteur du parallélépipède.  
+La classe Parallelepipede doit contenir des accesseurs (get) et mutateurs (set) et aussi les les méthodes suivantes :  
+**aire()** : Donne l'aire du parallélépipède (surcharge);  
+**volume()** : Donne le volume du parallélépipède;  
+**\_\_str\_\_()**: Donne une représentation du parallélépipède (surcharge).  
+Tester les classes.
+
+### Exercice 2
+
+Ecrivez une classe *Batiment* avec les attributs suivants :  
+**adresse** : L'adresse du bâtiment.
+La classe *Batiment* doit contenir des accesseurs (get) et mutateurs (set) pour les différents attributs. La classe Batiment doit contenir une méthode **\_\_str\_\_** donnant une représentation du bâtiment.  
+
+Ecrivez une classe *Maison* héritant de Batiment avec les attributs suivants :  
+**nbPieces** : Le nombre de pièces de la maison.
+La classe *Maison* doit contenir des accesseurs (get) et mutateurs (set) pour les différents attributs. La classe Maison doit contenir une méthode **\_\_str\_\_ ** donnant une représentation de la maison.  
+
+Ecrivez une classe *Immeuble* héritant de Bâtiment avec les attributs suivants :  
+**nbAppart** : Le nombre d'appartements de l'immeuble.  
+La classe Immeuble doit contenir des accesseurs (get) et mutateurs (set) pour les différents attributs. La classe Immeuble doit contenir une méthode **\_\_str\_\_** donnant une représentation de l'immeuble.  
+Tester les classes.
+
+### Exercice 3
+
+Ecrivez une classe abstraite *Employe* avec les attributs suivants :  
+**nom** : Le nom de famille de l'employé;  
+**prenom** : Le prénom de l'employé.  
+
+La classe *Employe* doit contenir des accesseurs (get) et mutateurs (set) pour les différents attributs et les méthodes suivantes :  
+**\_\_str\_\_** : Retourne une représentation d'un employé;  
+**gains()** : Retourne le salaire (abstraite).  
+
+Ecrivez une classe *Patron* héritant de Employe avec les attributs suivants :  
+**salaire** : Le salaire mensuel.  
+La classe Patron doit contenir des accesseurs (get) et mutateurs (set) pour les différents attributs et les méthodes suivantes :  
+**\_\_str\_\_**: Retourne une représentation du patron;  
+**gains()** : Retourne le salaire du patron.  
+
+Ecrivez une classe *TravailleurCommission* héritant de Employe avec les attributs suivants :    
+**salaire** : Le salaire mensuel de base;  
+**commission** : Montant de la commission par article vendus;  
+**quantite** : Nombre d'articles vendus par mois.  
+
+La classe *TravailleurCommission* doit contenir des accesseurs (get) et mutateurs (set) pour les différents attributs et les méthodes suivantes :  
+**\_\_str\_\_**: Retourne une représentation du travailleur à la commission;  
+**gains()** : Retourne la rétribution totale du travailleur à la commission.  
+
+Ecrivez une classe *TravailleurHoraire* héritant de Employe avec les attributs suivants :  
+**retribution** : La rétrubution horaire;  
+**heures** : Le nombre d'heures de travail par mois.  
+
+La classe *TravailleurHoraire* doit contenir des accesseurs (get) et mutateurs (set) pour les différents attributs et les méthodes suivantes :
+**\_\_str\_\_**: Retourne une représentation du travailleur horaire;  
+**gains()**: Retourne la rétribution totale du travailleur horaire.  
+Tester les classes. Utilisez les propriétés du polymorphisme.
